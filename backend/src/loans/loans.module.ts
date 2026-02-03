@@ -6,11 +6,11 @@ import { LoansController } from './loans.controller';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([Loan]), // 🔥 ESTO ES LO QUE FALTABA
+    TypeOrmModule.forFeature([Loan]), // 🔥 habilita el repositorio
   ],
   controllers: [LoansController],
   providers: [LoansService],
-  exports: [TypeOrmModule], // opcional pero recomendado
+  exports: [LoansService], // 🔥 para Reports y Payments
 })
 export class LoansModule {}
 

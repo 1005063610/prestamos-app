@@ -5,7 +5,7 @@ import { LoansModule } from '../loans/loans.module';
 
 @Module({
   imports: [LoansModule],
-  providers: [ReportsService],
   controllers: [ReportsController],
+  providers: [ReportsService],
 })
 export class ReportsModule {}
