@@ -21,4 +21,5 @@ export class User {
 
   @Column({ default: 'COLLECTOR' })
   role: UserRole;
+
 }
